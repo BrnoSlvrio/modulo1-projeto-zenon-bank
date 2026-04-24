@@ -23,10 +23,11 @@ public class Main {
     IO.println("---------------------------------------------------------------------");
 
     var transactionIngestor = new TransactionIngestor();
-    List<Transaction> transactions = transactionIngestor.read("data/database.csv");
+    List<Transaction> transactions = transactionIngestor.read("data/bad_data.csv");
     IO.println(transactions.size());
 
-    transactions.stream().limit(10).forEach(IO::println);
+    transactions.forEach(IO::println);
+    //transactions.stream().limit(10).forEach(IO::println);
 
     }
 }
