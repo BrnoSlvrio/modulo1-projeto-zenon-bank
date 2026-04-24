@@ -1,13 +1,10 @@
 package br.com.zenon;
 
 import javax.swing.*;
-import java.io.FileInputStream;
 import java.math.BigDecimal;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class TransactionIngestor {
     public List<Transaction> read(String filename) {
