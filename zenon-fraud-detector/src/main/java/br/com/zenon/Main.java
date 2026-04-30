@@ -29,8 +29,8 @@ public class Main {
         List<Transaction> transactions = transactionIngestor.read("data/database.csv");
         IO.println(transactions.size());
 
-        transactions.forEach(IO::println);
-        //transactions.stream().limit(10).forEach(IO::println);
+        //transactions.forEach(IO::println);
+        transactions.stream().limit(10).forEach(IO::println);
 
 
         IO.println("---------------------------------------------------------------------");
