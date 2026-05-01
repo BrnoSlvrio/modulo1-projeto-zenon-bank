@@ -42,7 +42,7 @@ public class Main {
 
         IO.println("---------------------------------------------------------------------");
 
-        NumberFormat nf = NumberFormat.getNumberInstance(new Locale("pt", "BR"));
+        NumberFormat nf = NumberFormat.getNumberInstance(Locale.of("pt", "BR"));
         nf.setMinimumFractionDigits(2);
         nf.setMaximumFractionDigits(2);
 
